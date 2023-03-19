@@ -1,0 +1,17 @@
+{
+  "name": "invader-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node lib/index",
+    "migrate": "node lib/db/migrate",
+    "rollback": "node lib/db/rollback"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "lodash": "^4.17.21",
+    "pg": "^8.10.0"
+  }
+}
