@@ -16,7 +16,7 @@ const up = (db) => {
             user_id INT NOT NULL
         );
         CREATE INDEX user_id_idx ON invaders (user_id);
-        CREATE UNIQUE INDEX space_id_user_id_idx ON invaders (space_id, user_id);
+        CREATE UNIQUE INDEX city_id_space_id_user_id_idx ON invaders (city_id, space_id, user_id);
         `
     )
 }
