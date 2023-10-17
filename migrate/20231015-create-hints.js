@@ -5,6 +5,7 @@ const up = (db) => {
         `
         CREATE TABLE hints
         (
+            id SERIAL PRIMARY KEY,
             description VARCHAR(255),
             placed_at TIMESTAMP,
             position JSONB,
